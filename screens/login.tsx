@@ -5,7 +5,7 @@ import { authenticate, setTheme } from "rn-okto-sdk";
 import { NavigationProp } from "@react-navigation/native";
 import { RootStackParamList } from "../navigtion";
 
-setTheme("#FF0000", "#FFFF00", "", "", "", "", "", "", "#000000");
+// setTheme("#FF0000", "#FFFF00", "", "", "", "", "", "", "#000000");
 
 const LoginScreen = ({ navigation }: { navigation: NavigationProp<RootStackParamList> }) => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -14,7 +14,7 @@ const LoginScreen = ({ navigation }: { navigation: NavigationProp<RootStackParam
         GoogleSignin.configure({
             scopes: ["email"],
             offlineAccess: true,
-            webClientId: "847564436307-0rpdamcgle6dumth8qgb6en3vk3j8egc.apps.googleusercontent.com"
+            webClientId: process.env.EXPO_PUBLIC_WEB_CLIENT_ID!,
         });
     }, [])
 

@@ -51,7 +51,7 @@ const UserProfileScreen = ({ navigation }: { navigation: NavigationProp<RootStac
 
     return (
         <View style={styles.container}>
-            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: 'center' }}>
+            <View style={styles.profileHeader}>
                 {userDetails && <View>
                     <Text style={{ opacity: 0.5, fontSize: 16 }}>Welcome,</Text>
                     <Text style={{ fontWeight: "600", fontSize: 18 }}>{userDetails.email}</Text>
@@ -62,7 +62,7 @@ const UserProfileScreen = ({ navigation }: { navigation: NavigationProp<RootStac
                     color={'red'}
                 />
             </View>
-            <View style={{ flexDirection: "row", justifyContent: 'space-between', alignItems: 'center', marginTop: 30 }}>
+            <View style={styles.walletsContainer}>
                 <Text style={styles.header}>My Wallets</Text>
                 <Pressable onPress={() => openOktoBottomsheet()}>
                     <Text style={{ color: "#468cd1", fontSize: 14 }}>Open Okto Widget</Text>
@@ -80,19 +80,22 @@ const UserProfileScreen = ({ navigation }: { navigation: NavigationProp<RootStac
                     <Button
                         title="Check Portofolio"
                         onPress={() => navigation.navigate("UserPortfolio")}
+                        color={"#BA68C8"}
                     />
                 </View>
                 <View style={{ gap: 10, flexDirection: 'row', justifyContent: "space-between" }}>
                     <View style={{ alignItems: "center" }}>
                         <Button
-                            title="Transfer Token"
+                            title="Send Token"
                             onPress={() => navigation.navigate("TransferTokens")}
+                            color={"#4CAF50"}
                         />
                     </View>
                     <View style={{ alignItems: "center" }}>
                         <Button
-                            title="Transfer NFT"
+                            title="Send NFT"
                             onPress={() => navigation.navigate("TransferNFT")}
+                            color={"#3F51B5"}
                         />
                     </View>
                 </View>
@@ -113,9 +116,20 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingTop: 8
     },
+    profileHeader: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: 'center'
+    },
     header: {
         fontSize: 18,
         fontWeight: '700',
+    },
+    walletsContainer: {
+        flexDirection: "row",
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 30
     },
     walletList: {
         marginTop: 10,
