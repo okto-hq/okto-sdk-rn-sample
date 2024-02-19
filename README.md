@@ -7,6 +7,7 @@
   [![Follow](https://img.shields.io/twitter/follow/okto.svg?style=social)](https://twitter.com/Okto_app)
   
 </div>
+
 ## React Native Okto Example App
 This is an example react native app that showcases the use of some features of [`Okto SDK`](https://www.npmjs.com/package/rn-okto-sdk).
 
