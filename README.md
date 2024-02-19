@@ -1,10 +1,12 @@
 <div align="center">
-    <img src="https://pbs.twimg.com/profile_images/1650407904036687874/Ek5Q2hla_400x400.png" width="100px" />
-    <h1>Okto</h1>
+  <br/>
+  <img src="https://pbs.twimg.com/profile_images/1650407904036687874/Ek5Q2hla_400x400.png" width="100px" height="auto" />
+  <h1>Okto</h1>
     
-    [![Follow](https://img.shields.io/twitter/follow/okto.svg?style=social)](https://twitter.com/Okto_app)
+  [![NPM package](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/rn-okto-sdk)
+  [![Follow](https://img.shields.io/twitter/follow/okto.svg?style=social)](https://twitter.com/Okto_app)
+  
 </div>
-
 ## React Native Okto Example App
 This is an example react native app that showcases the use of some features of [`Okto SDK`](https://www.npmjs.com/package/rn-okto-sdk).
 
