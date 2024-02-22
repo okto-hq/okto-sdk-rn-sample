@@ -2,8 +2,8 @@
   <br/>
   <img src="https://pbs.twimg.com/profile_images/1650407904036687874/Ek5Q2hla_400x400.png" width="100px" height="auto" />
   <h1>Okto</h1>
-    
-  [![NPM package](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/rn-okto-sdk)
+
+  [![NPM package](https://img.shields.io/npm/v/rn-okto-sdk?logo=npm&label=rn-okto-sdk)](https://www.npmjs.com/package/rn-okto-sdk)
   [![Follow](https://img.shields.io/twitter/follow/okto.svg?style=social)](https://twitter.com/Okto_app)
   
 </div>
